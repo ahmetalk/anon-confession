@@ -1,0 +1,17 @@
+<p style="color: white"><%= notice %></p>
+
+<h1 style="color: white">Anonymous Confession</h1>
+<small style="color: white">Spill the beans</small>
+<hr style="border: 2px solid white; ">
+
+<div id="posts" style="color: white">
+  <% @posts.each do |post| %>
+    <br>
+    <%= render post %>
+    <br>
+    <hr style="border: 2px solid white; ">
+  <% end %>
+</div>
+
+<a class="btn btn-primary" href="posts/new" role="button">New Post</a>
+
